@@ -1,5 +1,10 @@
 #ifndef PERSONNAGES_H_INCLUDED
 #define PERSONNAGES_H_INCLUDED
-void init_pers(SDL_Surface** img,SDL_Surface* ecran,char place[],SDL_Rect pos);
+typedef struct perso
+{
+  SDL_Surface* nom;
+  char place[50];
+  SDL_Rect pos;
+}perso;
+void init_pers(perso* zozor,SDL_Surface* ecran);
 #endif
-
